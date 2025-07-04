@@ -587,11 +587,11 @@
         async function loadDriveImages() {
             try {
                 // Usar RSS feed do Google Drive para listar arquivos automaticamente
-                const rssUrl = `https://drive.google.com/drive/folders/1S8zdzpAP8hfEZsrIs5k5nfrVB6DVZHST?usp=drive_link`;
+                const rssUrl = `https://drive.google.com/drive/folders/1S8zdzpAP8hfEZsrIs5k5nfrVB6DVZHST`;
                 
                 // Método alternativo: usar proxy CORS para acessar a pasta
                 const proxyUrl = 'https://api.allorigins.win/raw?url=';
-                const driveUrl = `https://drive.google.com/drive/folders/1S8zdzpAP8hfEZsrIs5k5nfrVB6DVZHST?usp=drive_link`;
+                const driveUrl = `https://drive.google.com/drive/folders/1S8zdzpAP8hfEZsrIs5k5nfrVB6DVZHST`;
                 
                 try {
                     const response = await fetch(proxyUrl + encodeURIComponent(driveUrl));
